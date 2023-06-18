@@ -1,0 +1,24 @@
+{
+    "server": {
+      "port": 3000,
+      "domain": "http://localhost:3000",
+      "update_interval" :"15"
+    },
+    "modpacks": [
+        {
+            "name": "Awesome Modpack v2",
+            "path": "https://github.com/minecraft/modpack2.git",
+            "token": "<REPLACE_WITH_GITHUB_TOKEN>",
+            "latestCommit": "",
+            "icon": true
+        },
+        {
+            "name": "Adventure Time pack 32 1.12.2",
+            "path": "https://github.com/minecraft/modpack1.git",
+            "token": "<REPLACE_WITH_GITHUB_TOKEN>",
+            "latestCommit": "",
+            "icon": true
+        }
+    ]
+}
+  
