@@ -1,14 +1,14 @@
 const express = require('express');
 const path = require('path');
-const packListRouter = require('./src/api/packListRouter');
-const { checkForUpdatesAndPackage } = require('./src/utils/packager');
+const packListRouter = require('./api/packListRouter');
+const { checkForUpdatesAndPackage } = require('./utils/packager');
 const fs = require('fs');
 
 const app = express();
 
 console.log('Initializing app...');
 
-const dataDir = path.join(__dirname, 'src', 'data');
+const dataDir = path.join(__dirname, 'data');
 const modpackStorageDir = path.join(dataDir, 'modpack-storage');
 const publicDir = path.join(dataDir, 'public');
 
@@ -17,7 +17,7 @@ fs.mkdirSync(dataDir, { recursive: true });
 fs.mkdirSync(modpackStorageDir, { recursive: true });
 fs.mkdirSync(publicDir, { recursive: true });
 
-let config = require('./config.json');
+let config = require('../config.json');
 config.modpackStorageDir = modpackStorageDir;
 config.publicDir = publicDir;
 console.log('Configuration loaded.');

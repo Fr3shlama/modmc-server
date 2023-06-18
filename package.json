@@ -4,7 +4,7 @@
   "description": "A modpack hosting service",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node ./src/app.js"
   },
   "dependencies": {
     "archiver": "^5.3.1",
